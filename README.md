@@ -1,7 +1,12 @@
 Listen to the Crazy Restaurant
 
-Author: Xuechun Luo
-Design: The cooker need to hear the feedback sound from the customer and pay attention to the sound of the pot to decide whether the dish is well done.
+Author: 
+
+Xuechun Luo
+
+Design: 
+
+The cooker need to hear the feedback sound from the customer and pay attention to the sound of the pot to decide whether the dish is well done.
 
 Screen Shot:
 
