@@ -116,16 +116,14 @@ void MenuMode::draw(glm::uvec2 const &drawable_size) {
 	glBlendFunc(GL_SRC_ALPHA, GL_ONE_MINUS_SRC_ALPHA);
 	//don't use the depth test:
 	glDisable(GL_DEPTH_TEST);
-
-	float bounce = (0.25f - (select_bounce_acc - 0.5f) * (select_bounce_acc - 0.5f)) / 0.25f * select_bounce_amount;
-
 	{ //draw the menu using DrawSprites:
 		assert(atlas && "it is an error to try to draw a menu without an atlas");
 		DrawSprites draw_sprites(*atlas, view_min, view_max, drawable_size, DrawSprites::AlignPixelPerfect);
 
 		for (auto const &item : items) {
 			bool is_selected = (&item == &items[0] + selected);
-			glm::u8vec4 color = (is_selected ? item.selected_tint : item.tint);
+			// glm::u8vec4 color = (is_selected ? item.selected_tint : item.tint);
+			glm::u8vec4 color = (is_selected ? glm::u8vec4(0xff, 0x00, 0xff, 0xff) : glm::u8vec4(0x00, 0x00, 0x00, 0xff));
 			float left, right;
 			if (!item.sprite) {
 				//draw item.name as text:
@@ -143,14 +141,14 @@ void MenuMode::draw(glm::uvec2 const &drawable_size) {
 				left = item.at.x + item.scale * (item.sprite->min_px.x - item.sprite->anchor_px.x);
 				right = item.at.x + item.scale * (item.sprite->max_px.x - item.sprite->anchor_px.x);
 			}
-			if (is_selected) {
-				if (left_select) {
-					draw_sprites.draw(*left_select, glm::vec2(left - bounce, item.at.y), item.scale, left_select_tint);
-				}
-				if (right_select) {
-					draw_sprites.draw(*right_select, glm::vec2(right + bounce, item.at.y), item.scale, right_select_tint);
-				}
-			}
+			// if (is_selected) {
+			// 	if (left_select) {
+			// 		draw_sprites.draw(*left_select, glm::vec2(left - bounce, item.at.y), item.scale, left_select_tint);
+			// 	}
+			// 	if (right_select) {
+			// 		draw_sprites.draw(*right_select, glm::vec2(right + bounce, item.at.y), item.scale, right_select_tint);
+			// 	}
+			// }
 			
 		}
 	} //<-- gets drawn here!

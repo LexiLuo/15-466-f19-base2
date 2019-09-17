@@ -1,0 +1,5 @@
+kitchen_all.xcf?kitchen_all.png 0 0 340 296 0 0 kitchen-empty
+kitchen_all.xcf?kitchen_all.png 340 0 680 296 340 0 kitchen-fire
+kitchen_all.xcf?kitchen_all.png 680 0 1020 296 680 0 kitchen-fire-water
+kitchen_all.xcf?kitchen_all.png 0 296 340 592 0 296 kitchen-fire-tomato
+kitchen_all.xcf?kitchen_all.png 340 296 680 592 340 296 kitchen-fire-water-tomato

@@ -20,28 +20,31 @@ struct StoryMode : Mode {
 
 	//------ story state -------
 	enum {
-		Dunes,
-		Oasis,
-		Hill
-	} location = Dunes;
-	bool have_stone = false;
-	bool added_stone = false;
-	struct {
-		bool first_visit = true;
-		bool wont_leave = false;
-	} dunes;
-	struct {
-		bool first_visit = true;
-		bool took_stone = false;
-	} oasis;
-	struct {
-		bool first_visit = true;
-		bool added_stone = false;
-	} hill;
+		KitchenEmpty,
+		Fire,
+		Water,
+		Tomato,
+		FireTomato,
+		FireWater,
+		WaterTomato,
+		FireWaterTomato,
+		GardenEmpty,
+		GardenTomato,
+		CanteenEmpty,
+		CanteenDone,
+		CanteenBad,
+		DishDone
+	} location = CanteenEmpty, garden_state = GardenTomato, kitchen_state = KitchenEmpty, canteen_state = CanteenEmpty, next_state = CanteenBad;
+	
 	
 	glm::vec2 view_min = glm::vec2(0,0);
-	glm::vec2 view_max = glm::vec2(256, 224);
+	glm::vec2 view_max = glm::vec2(259, 225);
 
 	//------ background music -------
 	std::shared_ptr< Sound::PlayingSample > background_music;
+	std::shared_ptr< Sound::PlayingSample > cook_done_music;
+	std::shared_ptr< Sound::PlayingSample > wow_music;
+	std::shared_ptr< Sound::PlayingSample > oh_no_music;
+	std::shared_ptr< Sound::PlayingSample > water_cook_music;
+	int playtime = 2;
 };
