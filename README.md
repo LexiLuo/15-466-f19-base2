@@ -20,9 +20,9 @@ Sources:
 
 (All free download sound resources for study purpose, thanks to www.aigei.com, sc.chinaz.com)
 
-water-cook.wav: http://www.aigei.com/item/shao_shui.html
+water-cook.wav: http://www.aigei.com/item/shao_shui.html   [烧水]
 
-cook-done.wav: http://www.aigei.com/sound/class/train_whistle-wav/
+cook-done.wav: http://www.aigei.com/sound/class/train_whistle-wav/  [火车鸣笛]
 
 relaxing.wav: http://www.aigei.com/music/class/easy/  	[Relaxing-轻松的事_Version_A-Guitar_Full]
 
