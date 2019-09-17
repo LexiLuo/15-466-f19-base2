@@ -26,7 +26,7 @@ cook-done.wav: http://www.aigei.com/sound/class/train_whistle-wav/
 
 relaxing.wav: http://www.aigei.com/music/class/easy/  	[Relaxing-轻松的事_Version_A-Guitar_Full]
 
-teafortwo.wav: http://www.aigei.com/music/class/easy/  	[Relaxing-TeaForTwo]
+teafortwo.wav: http://www.aigei.com/music/class/easy/  	[TeaForTwo-两杯茶_Version_B-SynthBells_Full]
 
 wow.wav: http://www.aigei.com/sound/class/applause  [哇呜1]
 
